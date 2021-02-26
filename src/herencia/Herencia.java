@@ -14,9 +14,5 @@ public class Herencia {
     public static void main (String[]args){
         
         Oficial objOficial = new Oficial("Jorge");
-        Empleado objEmple = new Empleado("Julissa");
-        Operario objOperario = new Operario("Jordan");
-        
     }
-    
 }
