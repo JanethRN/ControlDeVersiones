@@ -16,7 +16,7 @@ public class Encapsulamiento {
     //--------------------------------------------------------------------------
     
     private String nombre;
-    private int patas;
+    private int patas ;
     
        
     //--------------------------------------------------------------------------
@@ -46,13 +46,12 @@ public class Encapsulamiento {
     //--------------------------------------------------------------------------
     //Métodos main Jordan Espinosa-Julissa Renteria
     //--------------------------------------------------------------------------
-    public  void main (String[] args) {
+    public  static void main (String[] args) {
+        
        Encapsulamiento gato = new Encapsulamiento();
        gato.setNombre("Nemo");
        gato.setPatas(3);
        System.out.println("Mi gato se llama: " + gato.getNombre());
        System.out.println("El número de patas de mi gato es: " + gato.getPatas());
-       gato.setPatas(10);
-       gato.setPatas(-50);
     }
 }
