@@ -35,9 +35,13 @@ public class Encapsulamiento {
         this.nombre = nombre;
     }
    
-    public void setPatas(int patas) {
-        this.patas = patas;
-    }
+    public void setPatas(int numeroPatas){
+        if(numeroPatas>=0 && numeroPatas<5){
+           this.patas = numeroPatas;
+        } else {
+           throw new IllegalArgumentException("Número de patas no válido");
+        }
+    } 
     
     //--------------------------------------------------------------------------
     //Métodos main Jordan Espinosa-Julissa Renteria
