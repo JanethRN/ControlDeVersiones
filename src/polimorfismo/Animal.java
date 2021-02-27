@@ -9,7 +9,7 @@ package polimorfismo;
  *
  * @author Jordan
  */
-public class Animal {
+public abstract class Animal {
     
     //--------------------------------------------------------------------------
     //Atributos  Jordan Espinosa-Julissa Renteria
@@ -17,4 +17,17 @@ public class Animal {
     
     private String nombre,color;
     
+    //--------------------------------------------------------------------------
+    //Constructor con parámetros  Jordan Espinosa-Julissa Renteria
+    //--------------------------------------------------------------------------
+    
+    public Animal(String nombre, String color) {
+        this.nombre = nombre;
+        this.color = color;
+    }
+    
+    public abstract void comer();
+    public abstract void sonido();
+    
 }
+    
